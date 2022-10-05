@@ -62,7 +62,7 @@ if st.button(label='Click to Make Prediction'):
         x_sample = uploaded_df[['customer','age','gender','merchant','category','amount','day']]
         
 
-        loaded_model = pickle.load(open("pickled models/final_logreg_fraud_model.sav", 'rb'))
+        loaded_model = pickle.load(open("./pickled models/final_logreg_fraud_model.sav", 'rb'))
 
         prediction = loaded_model.predict(x_sample)
         pred_proba = loaded_model.predict_proba(x_sample)
