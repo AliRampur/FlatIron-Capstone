@@ -1,6 +1,7 @@
 
 #!pip install streamlit
 #!pip install seaborn
+#!pip install matplotlib
 
 from locale import currency
 from operator import index
