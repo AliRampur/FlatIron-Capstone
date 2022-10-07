@@ -6,7 +6,7 @@
 For this project, I used classification modeling, along with pipelines, cross validation and grid searches, to create the most effective model to predict a binary class (fraud or not fraud) pertaining to payments made by customers to certain vendors in North Caroline.
 
    - Link to Technical Notebook: https://github.com/AliRampur/FlatIron-Capstone/blob/master/Capstone%20Notebook%20-%20Payment%20Fraud.ipynb
-   - Link to final presentation: 
+   - Link to final presentation: https://github.com/AliRampur/FlatIron-Capstone/blob/master/presentation.pptx
    - Link to original and sample data sources: https://github.com/AliRampur/FlatIron-Capstone/tree/master/source%20data
    - Link to Streamlit: https://alirampur-flatiron-capstone-streamlit-capstone-yx8toc.streamlitapp.com/
    
@@ -53,6 +53,7 @@ In this first step, I analyzed and considered the payment data. Some of the EDA 
     - Count of Fraudulent Payments = 37,063
     - Count of Non-Fraudulent Payments = 74,126
   
+  
     ### Visualizations:
    Here is a bar graph of various key attributes and features across the sample transaction population:
    
@@ -65,11 +66,13 @@ In this first step, I analyzed and considered the payment data. Some of the EDA 
    
    
    
-   ![image](https://github.com/AliRampur/FlatIron-Capstone/blob/master/graphs/Total_Fraud_ByGender.png)
-   
-   
    
    ![image](https://github.com/AliRampur/FlatIron-Capstone/blob/master/graphs/Total_Fraud_ByGender.png)
+   
+   
+   
+   
+   ![image](https://github.com/AliRampur/FlatIron-Capstone/blob/master/graphs/Total_FraudbyDay.png)
    
    
    
@@ -81,8 +84,8 @@ As part of the modeling process, I setup a class ModelWithCV() (taken from Flati
 Based on the cross validation and pipeline, the most successful model for this binary prediction were:
 
     1. Logistic Regression: 0.99593 Accuracy Score
-    2. K-nearest Neighbors:
-    3. Random Forest Classification
+    2. K-nearest Neighbors: 0.933
+    3. Random Forest Classification: 0.856
     
 
 
@@ -104,9 +107,13 @@ Here is the confusion matrix on the test data:
 
 # 6.  Streamlit - Uploading Payment Transactions
 
+You can open the application and upload any set of similar transactional data:
 
+https://alirampur-flatiron-capstone-streamlit-capstone-yx8toc.streamlitapp.com/
+   
+The application will then indicate which transactions are potentially fraudulent and the probability associated with each transaction.
 
-
+Some additional summary graphs and metrics are also provided to help the user assess which procedures and controls may need to be modified based on the results (i.e. increase oversight on certain days of the week, certain customers have a large number of fraudulent transactions, etc.).
 
 
 # 7. Recommendations / Next Steps
@@ -114,22 +121,13 @@ Here is the confusion matrix on the test data:
 
 Based on the results of the final model, here are my recommendations:
     
-    1. At the end of each weekly or two-week period, feed the Final Logistic Regression model with payment data
+    1. At the end of each weekly or two-week period, feed the Final Logistic Regression model with payment data.
     
-    2. I can update the model to include additional locations (i.e. zipcode)
+    2. I can update the model to include additional locations (i.e. zipcode).
     
-    3. Investigate the identified transactions and prevent delivery of any product or service unless payment has been made
+    3. Investigate the identified transactions and prevent delivery of any product or service unless payment has been made.
 
 
 
 
-Next Steps:
-
-If given additional time…
-
-    - Further tune the model to increase the overall accuracy score
-
-    - Continue to add tweet data each week and update model
-    
-    - Consider more advanced NLP models (word embeddings, context, etc.)
 
