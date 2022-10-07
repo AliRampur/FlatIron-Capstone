@@ -5,10 +5,10 @@
 
 For this project, I used classification modeling, along with pipelines, cross validation and grid searches, to create the most effective model to predict a binary class (fraud or not fraud) pertaining to payments made by customers to certain vendors in North Caroline.
 
-   - Link to Technical Notebook: 
+   - Link to Technical Notebook: https://github.com/AliRampur/FlatIron-Capstone/blob/master/Capstone%20Notebook%20-%20Payment%20Fraud.ipynb
    - Link to final presentation: 
-   - Link to original data sources:
-   - Link to Streamlit:
+   - Link to original and sample data sources: https://github.com/AliRampur/FlatIron-Capstone/tree/master/source%20data
+   - Link to Streamlit: https://alirampur-flatiron-capstone-streamlit-capstone-yx8toc.streamlitapp.com/
    
    
 # 2. Business Problem
@@ -54,14 +54,23 @@ In this first step, I analyzed and considered the payment data. Some of the EDA 
     - Count of Non-Fraudulent Payments = 74,126
   
     ### Visualizations:
-   Here is a bar graph of the emotion types by company (Google, Apple, na)
+   Here is a bar graph of various key attributes and features across the sample transaction population:
    
-   ![image]()
+   ![image](https://github.com/AliRampur/FlatIron-Capstone/blob/master/graphs/Avg_fraud_category.png)
    
    
-   Here is a line graph of the most common tokens:
    
-   ![image]()
+   
+   ![image](https://github.com/AliRampur/FlatIron-Capstone/blob/master/graphs/Total_fraud_category.png)
+   
+   
+   
+   ![image](https://github.com/AliRampur/FlatIron-Capstone/blob/master/graphs/Total_Fraud_ByGender.png)
+   
+   
+   
+   ![image](https://github.com/AliRampur/FlatIron-Capstone/blob/master/graphs/Total_Fraud_ByGender.png)
+   
    
    
       
@@ -77,25 +86,25 @@ Based on the cross validation and pipeline, the most successful model for this b
     
 
 
-Here is the confusion matrix on the test data:
 
-   ![image]()
    
 
 # 5.  Final Classification Model
 
 After further consideration of the 3 model types identified above, I applied a grid search and the best model is Logistic Regression:
 
-    - Y - Test Set Accuracy Score: .69
+    - Y - Test Set Accuracy Score: .993
 
 
 Here is the confusion matrix on the test data:
 
-   ![image](https://github.com/AliRampur/Phase-4-Project/blob/main/graphs/ConfusionMatrix_Multi1.png)
+   ![image](https://github.com/AliRampur/FlatIron-Capstone/blob/master/graphs/Confusion%20Matrix.png)
    
    
 
 # 6.  Streamlit - Uploading Payment Transactions
+
+
 
 
 
